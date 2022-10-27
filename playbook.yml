@@ -6,7 +6,7 @@
   tasks:
   - ansible.builtin.dnf:
       name:
-      - requests
+      - python3-requests
       - docker
       state: present
 
