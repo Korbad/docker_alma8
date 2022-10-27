@@ -5,7 +5,9 @@
 
   tasks:
   - ansible.builtin.dnf:
-      name: docker
+      name:
+      - requests
+      - docker
       state: present
 
   - community.docker.docker_image:
