@@ -4,6 +4,10 @@
   connection: local
 
   tasks:
+  - ansible.builtin.dnf:
+      name: docker
+      state: present
+
   - community.docker.docker_image:
       name: almalinux/8-base
       source: pull
