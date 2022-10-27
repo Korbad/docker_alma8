@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  connection: local
+
+  tasks:
+  - command:
+      cmd: ansible-galaxy collection install -r requirements.yml -p ./collections

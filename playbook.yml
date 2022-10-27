@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: no
+  connection: local
+
+  tasks:
+  - community.docker.docker_image:
+      name: almalinux/8-base
+      source: pull
